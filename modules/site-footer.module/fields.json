@@ -1,0 +1,185 @@
+[ {
+  "id" : "a5595c0e-48c8-f9f7-aae1-087d8cfc4303",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b65fcbee-7ec2-a9de-a223-5e14c1876011",
+    "name" : "simplemenu_field",
+    "display_width" : null,
+    "label" : "Simple menu",
+    "required" : false,
+    "locked" : false,
+    "type" : "simplemenu",
+    "default" : [ {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "contentGroupId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Privacy",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "NO_LINK",
+      "children" : [ ]
+    }, {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "contentGroupId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Terms",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "NO_LINK",
+      "children" : [ ]
+    } ]
+  }, {
+    "id" : "be493b0b-8b12-8f1c-f5ae-c4d73b30f296",
+    "name" : "unfold_title",
+    "display_width" : null,
+    "label" : "Unfold Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "© Unfold"
+  }, {
+    "id" : "ebc0fe22-ab4f-38c4-8ff7-17b5eb1af491",
+    "name" : "instagram_link",
+    "display_width" : null,
+    "label" : "Instagram Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "javascript:void(0)",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "4dc97252-f371-eca4-8662-8602eee2da39",
+    "name" : "facebook_link",
+    "display_width" : null,
+    "label" : "Facebook Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "javascript:void(0)",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "4a75f04a-ef43-515d-ed2b-ad9b01617032",
+    "name" : "linkdin_link",
+    "display_width" : null,
+    "label" : "Linkdin Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "javascript:void(0)",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "simplemenu_field" : [ {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "contentGroupId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Privacy",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "NO_LINK",
+      "children" : [ ]
+    }, {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "contentGroupId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Terms",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "NO_LINK",
+      "children" : [ ]
+    } ],
+    "unfold_title" : "© Unfold",
+    "instagram_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "javascript:void(0)",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "facebook_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "javascript:void(0)",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "linkdin_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "javascript:void(0)",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

@@ -1,0 +1,49 @@
+[ {
+  "id" : "5838f521-7a4a-824b-89b6-186923617a9f",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "46c32576-4d57-bc75-7838-663220b6d793",
+    "name" : "site_logo",
+    "display_width" : null,
+    "label" : "Site Logo",
+    "required" : false,
+    "locked" : false,
+    "show_loading" : false,
+    "type" : "logo",
+    "default" : {
+      "override_inherited_src" : true,
+      "src" : "../../images/Unfold.png",
+      "alt" : "Unfold",
+      "suppress_company_name" : true,
+      "width" : 160,
+      "height" : 43
+    }
+  }, {
+    "id" : "c921d35d-b3fd-f5a6-07e3-824ea89860c1",
+    "name" : "navigation",
+    "display_width" : null,
+    "label" : "Navigation",
+    "required" : false,
+    "locked" : false,
+    "type" : "menu",
+    "default" : 65940882086
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "site_logo" : {
+      "override_inherited_src" : true,
+      "src" : "../../images/Unfold.png",
+      "alt" : "Unfold",
+      "suppress_company_name" : true,
+      "width" : 160,
+      "height" : 43
+    },
+    "navigation" : 65940882086
+  }
+} ]

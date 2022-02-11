@@ -1,0 +1,6 @@
+.module-text-and-image__content article { font-size: 24px; line-height: 1.6 }
+.module-text-and-image { padding-top: 157px; padding-bottom: 40px; }
+@media(max-width: 991px){ 
+  .module-text-and-image { padding-top: 157px; padding-bottom: 40px; }
+}
+@media(max-width: 767px){  .module-text-and-image {  padding-top: 10px;  padding-bottom: 40px;  } }

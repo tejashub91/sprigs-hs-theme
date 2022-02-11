@@ -1,0 +1,16 @@
+.module-main-banner { padding-top: 40px; padding-bottom: 60px; }
+.module-main-banner__right_title h3 { color: #58094F; }
+.module-main-banner__right_title { padding-bottom: 40px; }
+.module-main-banner__right_accordion_box { box-shadow: 2px 2px 6px rgba(33, 33, 33, 0.16); background: #FFFFFF; }
+.module-main-banner__right_acc_cont_bx { display: none; padding-left: 24px; padding-right: 24px; padding-bottom: 24px; }
+.module-main-banner__right_accordion_box + .module-main-banner__right_accordion_box { margin-top: 24px; }
+.module-main-banner__right_acc_title { font-size: 18px; font-weight: 700; line-height: 1.6; position: relative; padding: 24px 24px; cursor: pointer }
+.module-main-banner__right_acc_title:before {
+    content: ''; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M1 1.5L5 5.5L9 1.5' stroke='%23212121' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    position: absolute; right: 24px; top: 50%; transform: translateY(-50%); width: 10px; height: 7px; transition: all ease 0.3s; }
+.module-main-banner__right_acc_cont_inn { font-size: 16px }
+.module-main-banner__right_accordion_box.active .module-main-banner__right_acc_title {padding-bottom: 10px;}
+@media(max-width: 767px){
+.module-main-banner__right_title {  padding-bottom: 20px;   padding-top: 15px; }
+  .module-main-banner { padding-bottom: 40px }
+}

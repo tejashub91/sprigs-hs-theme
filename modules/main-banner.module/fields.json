@@ -1,0 +1,272 @@
+[ {
+  "id" : "f5133777-2c67-fe43-f16f-53b998fd9a44",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3c4a9793-2cc7-d99b-8bd1-c1fb5be649e4",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Easy-to-make recipes for beginners"
+  }, {
+    "id" : "42011784-a355-25aa-ca6c-2c2e782bddb4",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "../../images/Accordian%20Image.png",
+      "alt" : "Accordian Image",
+      "loading" : "lazy",
+      "width" : 660,
+      "height" : 609,
+      "max_width" : 660,
+      "max_height" : 609
+    }
+  }, {
+    "id" : "5b32ed25-c561-24c5-d5f5-39b7a23f8f0b",
+    "name" : "accordian_main_title",
+    "display_width" : null,
+    "label" : "Accordian Main Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "See what’s nice about Unfold"
+  }, {
+    "id" : "2c24a55e-87b9-46f6-53b0-20599d78da2c",
+    "name" : "accordian_group",
+    "display_width" : null,
+    "label" : "Accordian Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "4ba52468-7f0b-cb58-b3a5-5f4f20db406b",
+      "default" : 5
+    },
+    "children" : [ {
+      "id" : "4ba52468-7f0b-cb58-b3a5-5f4f20db406b",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "For restaurants"
+    }, {
+      "id" : "d982bc11-bd12-202b-4806-63fb403ba3f4",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>"
+    }, {
+      "id" : "8f9304d2-da74-b2e4-617d-c4af5f2a68f2",
+      "name" : "text_link",
+      "display_width" : null,
+      "label" : "Text Link",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Continue to page"
+    }, {
+      "id" : "43d42e39-27ef-9aed-4822-855baa655fa0",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "title" : "For restaurants",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "title" : "For delivery services",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "title" : "For food processing",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "title" : "For delivery services",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "title" : "For delivery services",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Easy-to-make recipes for beginners",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "../../images/Accordian%20Image.png",
+      "alt" : "Accordian Image",
+      "loading" : "lazy",
+      "width" : 660,
+      "height" : 609,
+      "max_width" : 660,
+      "max_height" : 609
+    },
+    "accordian_main_title" : "See what’s nice about Unfold",
+    "accordian_group" : [ {
+      "title" : "For restaurants",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "title" : "For delivery services",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "title" : "For food processing",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "title" : "For delivery services",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "title" : "For delivery services",
+      "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio, id vulputate leo volutpat vitae.</p>",
+      "text_link" : "Continue to page",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }
+} ]

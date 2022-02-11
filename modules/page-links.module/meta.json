@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "../../images/module-icons/module-icon.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 65927443479,
+  "label" : "Page links",
+  "is_available_for_new_content" : true
+}

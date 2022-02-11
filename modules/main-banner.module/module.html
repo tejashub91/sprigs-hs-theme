@@ -1,0 +1,60 @@
+<div class="module-main-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="module-main-banner__left">
+          <div class="module-main-banner__title">
+            {% if module.content.title %}
+            <h2>{{ module.content.title }}</h2>
+            {% endif %}
+          </div>
+          {% if module.content.image.src %}
+          <div class="module-main-banner__img pt-4">
+            {% set sizeAttrs = 'width="{{ module.content.image.width }}" height="{{ module.content.image.height }}"' %}
+            {% if module.content.image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif module.content.image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.content.image.max_width }}" height="{{ module.content.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.content.image.loading != 'disabled' ? 'loading="{{ module.content.image.loading }}"' : '' %}
+            <img src="{{ module.content.image.src }}" alt="{{ module.content.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="module-main-banner__right">
+          {% if module.content.accordian_main_title %}
+          <div class="module-main-banner__right_title">
+            <h3>{{ module.content.accordian_main_title }}</h3>
+          </div>
+          {% endif  %}
+          <div class="module-main-banner__right_accordion">
+            {% for item in module.content.accordian_group %}
+            <div class="module-main-banner__right_accordion_box">
+              <div class="module-main-banner__right_acc_title">{{ item.title }}</div>
+              <div class="module-main-banner__right_acc_cont_bx">
+                <div class="module-main-banner__right_acc_cont_inn">
+                  {{ item.content }}
+                </div>
+                {% if item.text_link %}
+                <div class="module-main-banner__right_acc_cont_link">
+                  {% set href = item.link_field.url.href %}
+                  {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}" class="text-link"
+                     {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+                     >{{ item.text_link }}</a>
+                </div>
+                {% endif %}
+              </div>  
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

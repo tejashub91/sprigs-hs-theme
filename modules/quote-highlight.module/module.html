@@ -1,0 +1,39 @@
+<div class="module-quote-highlight">
+  <div class="container">
+    <div class="row  align-items-center module-quote-highlight__max-width">
+      <div class="col-md-6">
+        <div class="module-quote-highlight__left">
+          {% if module.content.remove_shape %}
+          {% else %}
+          <img src="{{ get_asset_url('/sprigs-hs-theme/images/shape1.png') }}" alt="shape" class="shape-desktop shape">
+          <img src="{{ get_asset_url('/sprigs-hs-theme/images/shape-mobile.png') }}" alt="shape" class="shape-mobile shape">
+          {% endif %}
+          {% if module.content.image_field.src %}
+          {% set sizeAttrs = 'width="{{ module.content.image_field.width }}" height="{{ module.content.image_field.height }}"' %}
+          {% if module.content.image_field.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.content.image_field.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.content.image_field.max_width }}" height="{{ module.content.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.content.image_field.loading != 'disabled' ? 'loading="{{ module.content.image_field.loading }}"' : '' %}
+          <img src="{{ module.content.image_field.src }}" alt="{{ module.content.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div> 
+      </div>
+      <div class="col-md-6">
+        <div class="module-quote-highlight__right">
+          {% if module.content.qoute_content %}
+          <div class="module-quote-highlight__right_quote">
+            {{ module.content.qoute_content }}
+          </div>
+          {% endif %}
+          {% if module.content.author_name %}
+          <div class="module-quote-highlight__right_quote_name">
+            {{ module.content.author_name }}
+          </div>
+          {% endif %}
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>

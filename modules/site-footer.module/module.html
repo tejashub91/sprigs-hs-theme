@@ -1,0 +1,80 @@
+{# PLACEHOLDER HTML #}
+{#
+<div class="module-site-footer py-5">
+  <div class="container">
+    <div class="text-center p-5 border">
+      <h2>Site footer module</h2>
+    </div>
+  </div>
+</div> #}
+{# PLACEHOLDER HTML END #}
+<div class="module-site-footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6">
+        <div class="row align-items-center">
+          <div class="module-site-footer__left-menu">
+            {% simple_menu menu_tree="{{ module.content.simplemenu_field }}" %}  
+          </div>
+          {% if module.content.unfold_title %}
+          <div class="module-site-footer__unfold-title">
+            {{ module.content.unfold_title }}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="module-site-footer__social-links">
+          <ul>  
+            {% if module.content.instagram_link.url.href %}
+            <li>
+              {% set href = module.content.instagram_link.url.href %}
+              {% if module.content.instagram_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if module.content.instagram_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.content.instagram_link.rel %}rel="{{ module.content.instagram_link.rel }}"{% endif %}
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2.2C15.2 2.2 15.6 2.2 16.9 2.3C20.2 2.4 21.7 4 21.8 7.2C21.9 8.5 21.9 8.8 21.9 12C21.9 15.2 21.9 15.6 21.8 16.8C21.7 20 20.1 21.6 16.9 21.7C15.6 21.8 15.3 21.8 12 21.8C8.8 21.8 8.4 21.8 7.2 21.7C3.9 21.6 2.4 20 2.3 16.8C2.2 15.5 2.2 15.2 2.2 12C2.2 8.8 2.2 8.4 2.3 7.2C2.4 4 4 2.4 7.2 2.3C8.4 2.2 8.8 2.2 12 2.2ZM12 0C8.7 0 8.3 0 7.1 0.1C2.7 0.3 0.3 2.7 0.1 7.1C0 8.3 0 8.7 0 12C0 15.3 0 15.7 0.1 16.9C0.3 21.3 2.7 23.7 7.1 23.9C8.3 24 8.7 24 12 24C15.3 24 15.7 24 16.9 23.9C21.3 23.7 23.7 21.3 23.9 16.9C24 15.7 24 15.3 24 12C24 8.7 24 8.3 23.9 7.1C23.7 2.7 21.3 0.3 16.9 0.1C15.7 0 15.3 0 12 0ZM12 5.8C8.6 5.8 5.8 8.6 5.8 12C5.8 15.4 8.6 18.2 12 18.2C15.4 18.2 18.2 15.4 18.2 12C18.2 8.6 15.4 5.8 12 5.8ZM12 16C9.8 16 8 14.2 8 12C8 9.8 9.8 8 12 8C14.2 8 16 9.8 16 12C16 14.2 14.2 16 12 16ZM18.4 4.2C17.6 4.2 17 4.8 17 5.6C17 6.4 17.6 7 18.4 7C19.2 7 19.8 6.4 19.8 5.6C19.8 4.8 19.2 4.2 18.4 4.2Z" fill="#58094F"/>
+                </svg>
+              </a>
+            </li>
+            {% endif %}
+            {% if module.content.facebook_link.url.href %}
+            <li>
+              {% set href = module.content.facebook_link.url.href %}
+              {% if module.content.facebook_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if module.content.facebook_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.content.facebook_link.rel %}rel="{{ module.content.facebook_link.rel }}"{% endif %}
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 12 24" fill="none">
+                <path d="M3 8H0V12H3V24H8V12H11.6L12 8H8V6.3C8 5.4 8.2 5 9.1 5H12V0H8.2C4.6 0 3 1.6 3 4.6V8Z" fill="#58094F"/>
+                </svg>
+              </a>
+            </li>
+            {% endif %}
+            {% if module.content.linkdin_link.url.href %}
+            <li>
+              {% set href = module.content.linkdin_link.url.href %}
+              {% if module.content.linkdin_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if module.content.linkdin_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.content.linkdin_link.rel %}rel="{{ module.content.linkdin_link.rel }}"{% endif %}
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5 3C5 4.4 3.9 5.5 2.5 5.5C1.1 5.5 0 4.4 0 3C0 1.6 1.1 0.5 2.5 0.5C3.9 0.5 5 1.6 5 3ZM5 7.5H0V23.5H5V7.5ZM13 7.5H8V23.5H13V15.1C13 10.4 19 10 19 15.1V23.5H24V13.4C24 5.5 15.1 5.8 13 9.7V7.5Z" fill="#58094F"/>
+                </svg>
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,49 @@
+<div class="module-cta-banner">
+  <div class="module-cta-banner__bg-img " style="background-image:url({{ module.content.image.src }})"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="module-cta-banner__left font-white">
+          <div class="module-cta-banner__inner">
+            {% if module.content.title %}
+            <div class="module-cta-banner__title">
+              <h2>{{ module.content.title }}</h2>
+            </div>
+            {% endif %}
+            {% if module.content.text %}
+            <div class="module-cta-banner__content pt-3">
+              <article>
+                {{ module.content.text }}
+              </article>
+            </div>
+            {% endif %}
+            <div class="module-cta-banner__buttons pt-2">
+              <div class="">
+                {% set href = module.content.first_link.url.href %}
+                {% if module.content.first_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.content.first_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.content.first_link.rel %}rel="{{ module.content.first_link.rel }}"{% endif %}
+                   class="btn btn-white bold"
+                   >{{ module.content.first_link_text }}</a>
+              </div>
+              <div class="">
+                {% set href = module.content.second_link.url.href %}
+                {% if module.content.second_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="text-link font-white"
+                   {% if module.content.second_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.content.second_link.rel %}rel="{{ module.content.second_link.rel }}"{% endif %}
+                   >{{ module.content.second_link_text }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>    

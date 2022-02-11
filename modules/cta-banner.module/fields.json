@@ -1,0 +1,150 @@
+[ {
+  "id" : "e1c37fc2-ced7-77cf-87b8-a7de964f63e9",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "67bf11a4-2fd0-9c63-9032-d1a52c0f84f7",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Ready to talk to a specialist?"
+  }, {
+    "id" : "0ae46c62-19fc-ccb3-4e60-a82ca520f018",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio.</p>"
+  }, {
+    "id" : "d0a9fd29-e153-f7e6-c475-50cea2f1084f",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : { 
+      "size_type" : "auto",
+      "src" : "../../images/right-women.jpg",
+      "alt" : "right-women",
+      "loading" : "lazy",
+      "width" : 1125,
+      "height" : 807,
+      "max_width" : 1125,
+      "max_height" : 807
+    }
+  }, {
+    "id" : "783367b3-e755-5b73-e8ea-52b7f5aee20b",
+    "name" : "first_link_text",
+    "display_width" : null,
+    "label" : "First Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Discover recipes"
+  }, {
+    "id" : "06f1cee8-799d-6e13-8fa1-c0d3028490f0",
+    "name" : "first_link",
+    "display_width" : null,
+    "label" : "First Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "846d16f3-acf4-7e31-8c05-27879b8ce260",
+    "name" : "second_link_text",
+    "display_width" : null,
+    "label" : "Second Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Read more"
+  }, {
+    "id" : "53dced51-f1a8-262a-8648-6d7edeb9ed56",
+    "name" : "second_link",
+    "display_width" : null,
+    "label" : "Second Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Ready to talk to a specialist?",
+    "text" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio.</p>",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "../../images/right-women.jpg",
+      "alt" : "right-women",
+      "loading" : "lazy",
+      "width" : 1125,
+      "height" : 807,
+      "max_width" : 1125,
+      "max_height" : 807
+    },
+    "first_link_text" : "Discover recipes",
+    "first_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "second_link_text" : "Read more",
+    "second_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

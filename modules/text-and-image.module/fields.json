@@ -1,0 +1,201 @@
+[ {
+  "id" : "1f5ba0f4-48fd-86d9-9351-45a69c1ea667",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "image",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "../../images/right-img.png",
+      "alt" : "Image placeholder"
+    }
+  }, {
+    "id" : "d1369505-90ca-586d-9fda-213dc2b81efa",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Turn your lorem challenge into ipsum success."
+  }, {
+    "id" : "31aadbe8-8ef7-42f2-a1a2-1a893fceee64",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illo eos obcaecati vel mollitia nisi? Accusantium amet consectetur.</p>"
+  }, {
+    "id" : "940ca384-110f-43e5-ff5f-9fba4d9ec4d7",
+    "name" : "normal_button",
+    "display_width" : null,
+    "label" : "Normal Button",
+    "help_text" : "If you need Normal Button Please Turn on",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "ff6e737f-5928-918a-7a5e-abe9d1b6167a",
+    "name" : "cta_field",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "type" : "cta",
+    "default" : "62639199-aed8-422b-9732-e9e58f73895d"
+  }, {
+    "id" : "dcec8d05-60fe-73cd-ab06-311f4fab75f2",
+    "name" : "normal_button_text",
+    "display_width" : null,
+    "label" : "Normal Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Discover recipes"
+  }, {
+    "id" : "5b07fb18-019a-d154-b061-97d7d76d41ca",
+    "name" : "normal_button_link",
+    "display_width" : null,
+    "label" : "Normal Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "src" : "../../images/right-img.png",
+      "alt" : "Image placeholder"
+    },
+    "title" : "Turn your lorem challenge into ipsum success.",
+    "content" : "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illo eos obcaecati vel mollitia nisi? Accusantium amet consectetur.</p>",
+    "normal_button" : true,
+    "cta_field" : "62639199-aed8-422b-9732-e9e58f73895d",
+    "normal_button_text" : "Discover recipes",
+    "normal_button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "dd1978f9-c805-e414-1bad-7e02fe944535",
+  "name" : "settings",
+  "display_width" : null,
+  "label" : "SETTINGS",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "7e7ba5a9-5b87-999d-9545-6efae742100a",
+    "name" : "select_backgound",
+    "display_width" : null,
+    "label" : "Select Backgound",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "bg-img", "Background Image" ], [ "bg-color", "Background Color" ] ],
+    "type" : "choice",
+    "default" : "bg-img"
+  }, {
+    "id" : "26714c8e-66ec-da85-6700-a96af691d3ee",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "7e7ba5a9-5b87-999d-9545-6efae742100a",
+      "controlling_value_regex" : "bg-img",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "../../images/Shape.png",
+      "alt" : "Shape",
+      "width" : 1440,
+      "height" : 740,
+      "max_width" : 1440,
+      "max_height" : 740
+    }
+  }, {
+    "id" : "afec77fc-b98a-6541-f041-ba12cf4c28cf",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "7e7ba5a9-5b87-999d-9545-6efae742100a",
+      "controlling_value_regex" : "bg-color",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "select_backgound" : "bg-img",
+    "background_image" : {
+      "src" : "../../images/Shape.png",
+      "alt" : "Shape",
+      "width" : 1440,
+      "height" : 740,
+      "max_width" : 1440,
+      "max_height" : 740
+    },
+    "background_color" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }
+} ]

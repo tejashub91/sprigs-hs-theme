@@ -1,0 +1,79 @@
+[ {
+  "id" : "a8dc619f-135e-e377-d49c-bcbba5494043",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "36c5fab2-9ae5-f3eb-9e5b-af6e7b494400",
+    "name" : "remove_shape",
+    "display_width" : null,
+    "label" : "Remove Shape",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "11632d43-7a80-9b5d-bb60-e68697195115",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "../../images/Images.png",
+      "alt" : "Image",
+      "loading" : "lazy",
+      "width" : 452,
+      "height" : 452,
+      "max_width" : 452,
+      "max_height" : 452
+    }
+  }, {
+    "id" : "d773512d-2181-2ac8-f6d1-b557b7787ea2",
+    "name" : "qoute_content",
+    "display_width" : null,
+    "label" : "Qoute Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>“Sed tempus maximus ligula, at convallis dui lacinia vitae. Donec efficitur, lacus a placerat finibus, tellus quam egestas magna, vel commodo ex est et mi vestibulum.”</p>"
+  }, {
+    "id" : "f3e23015-ff3f-7c11-1891-a9d2a050349f",
+    "name" : "author_name",
+    "display_width" : null,
+    "label" : "Author Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Jane Doe"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "remove_shape" : false,
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "../../images/Images.png",
+      "alt" : "Image",
+      "loading" : "lazy",
+      "width" : 452,
+      "height" : 452,
+      "max_width" : 452,
+      "max_height" : 452
+    },
+    "qoute_content" : "<p>“Sed tempus maximus ligula, at convallis dui lacinia vitae. Donec efficitur, lacus a placerat finibus, tellus quam egestas magna, vel commodo ex est et mi vestibulum.”</p>",
+    "author_name" : "Jane Doe"
+  }
+} ]

@@ -1,0 +1,204 @@
+[ {
+  "id" : "6eb6d17d-618d-501e-3df1-22080a4ab554",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f574c356-897c-e472-9414-5d0aa7badf16",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Platform for dolor sit amet."
+  }, {
+    "id" : "d28f337d-ba6a-b264-e493-e8d52882af44",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio.</p>"
+  }, {
+    "id" : "4fd94ff6-76ef-964e-ca6e-e011c5bc61ed",
+    "name" : "button_text_group",
+    "display_width" : null,
+    "label" : "Button Text Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "b5a1dd8b-fc92-1877-e13d-a630fb14626c",
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "b5a1dd8b-fc92-1877-e13d-a630fb14626c",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Custom page link button"
+    }, {
+      "id" : "11ae2f64-2a58-9617-89d6-1cef09d0bd46",
+      "name" : "text_link",
+      "display_width" : null,
+      "label" : "Text Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "button_text" : "Custom page link button",
+      "text_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "button_text" : "Custom page link button",
+      "text_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "button_text" : "Custom page link button",
+      "text_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "button_text" : "Custom page link button",
+      "text_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Platform for dolor sit amet.",
+    "content" : "<p>Aaliquet rhoncus quam. Etiam eget dui in enim feugiat ultrices. Donec consequat tempor odio.</p>",
+    "button_text_group" : [ {
+      "button_text" : "Custom page link button",
+      "text_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "button_text" : "Custom page link button",
+      "text_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "button_text" : "Custom page link button",
+      "text_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "button_text" : "Custom page link button",
+      "text_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }
+}, {
+  "id" : "94106218-0370-cd41-cdad-9058f9a23cb4",
+  "name" : "settings",
+  "display_width" : null,
+  "label" : "SETTINGS",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3fa5ef25-ad65-2acb-89c8-f23bec74fbb5",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#58094F",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "color" : "#58094F",
+      "opacity" : 100
+    }
+  }
+} ]

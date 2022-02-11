@@ -1,0 +1,13 @@
+{
+  "global" : false,
+  "icon" : "../../images/module-icons/module-icon.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 65935031611,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../css/site-navigation.css",
+    "name" : "site-navigation.css"
+  } ],
+  "label" : "Site navigation",
+  "is_available_for_new_content" : true
+}

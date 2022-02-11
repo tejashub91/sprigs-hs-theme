@@ -1,0 +1,60 @@
+<div class="module-page-link__top-svg">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="1440px" height="100px" viewBox="0 0 1440 100" style="enable-background:new 0 0 1440 100;" xml:space="preserve">
+    <g>
+      <path d="M1440,100V0L0,100H1440z" fill="{{ module.settings.background_color.color }}"/>
+    </g>
+  </svg>
+</div>
+<div class="module-page-link {{name}}" style="background-color: {{ module.settings.background_color.color }}">
+  <div class="container">
+    <div class="module-page-link__innr">
+      <div class="row align-item-center module-page-link__max-width">
+        <div class="col-12 col-md-6">
+          <div class="module-page-link__left-innr">
+            {% if module.content.title %}
+            <div class="module-page-link__left-title">
+              <h2 class="text-white">
+                {{ module.content.title }}
+              </h2>
+            </div>
+            {% endif %}
+            {% if module.content.content %}
+            <div class="module-page-link__left-content text-white">
+              {{ module.content.content }}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="module-page-link__right">
+            {% for item in module.content.button_text_group %}
+            <div class="module-page-link__button">
+              <div class="module-page-link__button-title">
+                {% set href = item.text_link.url.href %}
+                {% if item.text_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if item.text_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if item.text_link.rel %}rel="{{ item.text_link.rel }}"{% endif %}
+                   ><span>{{ item.button_text }}</span>
+                </a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="module-page-link__bottom-svg">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="1440px" height="100px" viewBox="0 0 1440 100" style="enable-background:new 0 0 1440 100;" xml:space="preserve">
+<g>
+	<path class="st0" d="M0,0v100L1440,0H0z" fill="{{ module.settings.background_color.color }}"/>
+</g>
+</svg>
+</div>
+
+

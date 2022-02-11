@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+/**
+Since the assignment will not be customizable but have a static stye, you won't need the theme field.json file.
+*/
+/**
+Colors variables
+*/
+
+body { font-family: Roboto; color: #212121; line-height: 1.6; font-weight: 400; font-size: 18px  }
+
+/**
+Typography
+*/
+
+h1, h2, h3, h4, h5, h6 { color: #212121; font-family: 'Libre Baskerville', serif; font-weight: 700; }
+h1,.h1 { font-size:48px; line-height:1.2; }
+h2,.h2 { font-size:40px; line-height:1.2; }
+h3,.h3 { font-size:24px; line-height:1.4; }
+h4,.h4 { font-size:20px; line-height:1.2; }
+h5,.h5 { font-size:18px; line-height:1.1; }
+h6,.h6 { font-size:16px; line-height:1.1; }
+
+
+/**
+Colors variables
+*/
+.font-white, .font-white a, .font-white h1, .font-white h2, .font-white h3, .font-white h4, .font-white h5, .font-white h6 { color:#fff; }
+
+/*font weights*/
+.bold, .bold h1, .bold h2, .bold h3, .bold h4, .bold h5, .bold h6  { font-weight:700; }
+.semibold, .semibold h1, .semibold h2, .semibold h3, .semibold h4, .semibold h5, .semibold h6  { font-weight:600; }
+.medium, .medium h1, .medium h2, .medium h3, .medium h4, .medium h5, .medium h6 { font-weight:500; }
+.normal, .normal h1, .normal h2, .normal h3, .normal h4, .normal h5, .normal h6 { font-weight:400; }
+.light, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 { font-weight:300; }
+.container { padding-left: 24px; padding-right: 24px }
+
+.altfont { font-family: Libre Baskerville; }
+img { max-width:100%; height:auto; border:none; vertical-align:middle; }
+a { text-decoration:none; color:#212121; transition:all ease 0.3s; -moz-transition:all ease 0.3s; -webkit-transition:all ease 0.3s; -o-transition:all ease 0.3s; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 11px 36px 11px 24px; background-color: #58094f; color: #fff; position: relative; border: 1px solid #58094f; border-radius: 0; }
+.btn:before { content: ''; position: absolute; top: -1px; right: -1px; width: 0; height: 0; border-top: 49px solid white; border-left: 24px solid transparent; transition: all ease .2s; }
+.btn:hover { background-color: #390634; border-color : #390634 }
+a.btn.btn-white {  color: #58094F;  background-color: #fff; }
+a.btn.btn-white:before {border-top-color: #58094f;}
+a.btn.btn-white:hover{ background-color: #E2CFC9;color:#212121  }
+a.text-link { color: #58094F; font-weight: bold; display: inline-block; position: relative; vertical-align: middle; }
+a.text-link:after { content: '';     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20.7071 12.7071C21.0976 12.3166 21.0976 11.6834 20.7071 11.2929L14.3431 4.92893C13.9526 4.53841 13.3195 4.53841 12.9289 4.92893C12.5384 5.31946 12.5384 5.95262 12.9289 6.34315L18.5858 12L12.9289 17.6569C12.5384 18.0474 12.5384 18.6805 12.9289 19.0711C13.3195 19.4616 13.9526 19.4616 14.3431 19.0711L20.7071 12.7071ZM-8.74228e-08 13L20 13L20 11L8.74228e-08 11L-8.74228e-08 13Z' fill='%2358094F'/%3E%3C/svg%3E");
+    width: 24px; height: 24px; display: inline-block; vertical-align: middle; margin-left: 16px; transition: all ease 0.2s; }
+a.text-link:hover:after { margin-left: 26px; }
+.text-link.font-white {  color: #fff; }
+.text-link.font-white:after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20.7071 12.7071C21.0976 12.3166 21.0976 11.6834 20.7071 11.2929L14.3431 4.92893C13.9526 4.53841 13.3195 4.53841 12.9289 4.92893C12.5384 5.31946 12.5384 5.95262 12.9289 6.34315L18.5858 12L12.9289 17.6569C12.5384 18.0474 12.5384 18.6805 12.9289 19.0711C13.3195 19.4616 13.9526 19.4616 14.3431 19.0711L20.7071 12.7071ZM-8.74228e-08 13L20 13L20 11L8.74228e-08 11L-8.74228e-08 13Z' fill='white'/%3E%3C/svg%3E"); }
+
+@media(max-width: 991px){
+  h1,.h1 { font-size:32px; line-height:1.4; }
+  h2,.h2 { font-size:32px; line-height:1.4; }
+
+}
+
+
+
+

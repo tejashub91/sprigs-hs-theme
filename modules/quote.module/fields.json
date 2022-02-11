@@ -1,0 +1,35 @@
+[ {
+  "id" : "42017f32-6c5b-e14b-578f-85855cf8e111",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "15c55ac8-ea80-0d8f-b9d6-df8bdfec81bb",
+    "name" : "remove_shape",
+    "display_width" : null,
+    "label" : "Remove Shape",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "f1aa11a5-e17d-44c5-08dd-59b7d2553942",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>“Sed tempus maximus ligula, at convallis maximus ligula, at convallis dui lacinia vitae. Donec efficitur, lacus a placerat finibus, tellus quam egestas magna, vel commodo ex est et mi vestibulum.”</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "remove_shape" : false,
+    "content" : "<p>“Sed tempus maximus ligula, at convallis maximus ligula, at convallis dui lacinia vitae. Donec efficitur, lacus a placerat finibus, tellus quam egestas magna, vel commodo ex est et mi vestibulum.”</p>"
+  }
+} ]
